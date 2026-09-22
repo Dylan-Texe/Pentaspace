@@ -62,7 +62,7 @@ The renderer does not decide 5D motion or collisions. It only maps the current 5
 - Penteract / tesseract vertices and edges
 - Successive hyperplane slices of those polytopes
 - Hypersphere 3-ball radius `√(R² − Δw² − Δv²)`
-- 5D Euler integration and sphere–AABB collision
+- 5D Euler integration and sphere-AABB collision
 - Portal teleport between two points of R⁵
 
 **Artistic (labeled in the inspector / notes)**

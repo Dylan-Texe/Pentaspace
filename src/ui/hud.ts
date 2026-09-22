@@ -90,12 +90,12 @@ export class Hud {
     <header class="bezel top-bezel">
       <div class="mark">PENTASPACE <em>GEOM-5</em></div>
       <div class="stats">
-        <span>EXP <b id="stat-exp">—</b></span>
+        <span>EXP <b id="stat-exp">-</b></span>
         <span>MODE <b id="stat-mode">combined</b></span>
         <span>SIM <b id="stat-pause">RUN</b></span>
         <span>RATE <b id="stat-speed">1.00</b></span>
         <span>t <b id="stat-time">0.00</b></span>
-        <span>FPS <b id="stat-fps">—</b></span>
+        <span>FPS <b id="stat-fps">-</b></span>
       </div>
     </header>
     <aside class="bezel left-bezel">
@@ -103,7 +103,7 @@ export class Hud {
       <div id="coord-nums" class="nums"></div>
       <div id="coord-bars" class="bars"></div>
       <canvas id="star-plot" width="180" height="180" title="Diagrammatic 5-axis plot"></canvas>
-      <p class="tiny">Star plot is a diagram — not a 5D embedding.</p>
+      <p class="tiny">Star plot is a diagram - not a 5D embedding.</p>
     </aside>
     <aside class="bezel right-bezel" id="inspector">
       <div class="engraved">OBJECT INSPECTOR</div>
@@ -152,7 +152,7 @@ export class Hud {
       <ul>
         <li><b>WASD</b> move XYZ · <b>mouse</b> look · <b>Space/Shift</b> ±Y</li>
         <li><b>Q/E</b> move W (magenta) · <b>R/F</b> move V (amber)</li>
-        <li><b>1–4</b> projection modes · <b>T</b> pick up · <b>X</b> drop · <b>RMB</b> throw</li>
+        <li><b>1-4</b> projection modes · <b>T</b> pick up · <b>X</b> drop · <b>RMB</b> throw</li>
         <li><b>M</b> axis overlay (diagrammatic W/V lines) · <b>N</b> noclip</li>
         <li>Click the view to capture the pointer. Esc releases it.</li>
       </ul>

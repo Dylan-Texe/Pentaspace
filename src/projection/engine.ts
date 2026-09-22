@@ -14,7 +14,7 @@ export interface ProjectionSettings {
   thicknessV: number;
   /**
    * Artistic: faint XYZ shear from W/V in orthographic/combined views.
-   * Not a claim about 5D vision — a diagrammatic overlay.
+   * Not a claim about 5D vision - a diagrammatic overlay.
    */
   artisticShear: boolean;
   shearW: number;
