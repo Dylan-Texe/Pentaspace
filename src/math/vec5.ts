@@ -1,4 +1,4 @@
-/** 5-dimensional Euclidean vector. Core mathematical type — not a render object. */
+/** 5-dimensional Euclidean vector. Core mathematical type - not a render object. */
 export class Vec5 {
   constructor(
     public x = 0,

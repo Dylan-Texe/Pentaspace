@@ -75,7 +75,7 @@ function creature(world: World, origin: Vec5): void {
 }
 
 function loadTesseract(world: World, player: PlayerState): void {
-  world.objective = "Walk around the 4-cube. Press E/Q to move in W — the projected wireframe shears and the slice solid changes.";
+  world.objective = "Walk around the 4-cube. Press E/Q to move in W - the projected wireframe shears and the slice solid changes.";
   world.mathNote = "Exact: 16 vertices of [-s,s]⁴, rotated in 5D, then perspective  W→3D or a W-slice. V is near zero.";
   addGrid(world);
   addTesseract(world, "Tesseract", new Vec5(0, 2.2, 0, 0, 0), 2.1, 0x7ef0ff, {
@@ -129,7 +129,7 @@ function loadSphere(world: World, player: PlayerState): void {
 
 function loadRoom(world: World, player: PlayerState): void {
   world.objective = "Start in an ordinary room. Move W with E/Q, then V with R/F. Walls, doors, and interiors are different 5D slabs.";
-  world.mathNote = "Each wall is a 5D AABB. Collision and visibility use all five coordinates. No fake slider — your body has a W and V.";
+  world.mathNote = "Each wall is a 5D AABB. Collision and visibility use all five coordinates. No fake slider - your body has a W and V.";
   addGrid(world);
   const t = 0.28;
   const h = new Vec5(11, 3.4, 11, 0.55, 0.55);
@@ -362,7 +362,7 @@ function loadMaze(world: World, player: PlayerState): void {
 
 function loadCorridorW(world: World, player: PlayerState): void {
   world.objective = "The hallway dead-ends in XYZ. Hold E and travel in W through the magenta arches.";
-  world.mathNote = "Arches are thin AABBs along W. Your XZY can stay fixed while W changes — a literal 5D corridor.";
+  world.mathNote = "Arches are thin AABBs along W. Your XZY can stay fixed while W changes - a literal 5D corridor.";
   addBox(world, "hall floor", new Vec5(0, 0, -6, 0, 0), new Vec5(2.2, 0.2, 8, 0.5, 0.5), 0x1a222c, { kind: "corridor" });
   addBox(world, "hall +X", new Vec5(2.2, 2, -6, 0, 0), new Vec5(0.2, 2, 8, 0.5, 0.5), WALL, { kind: "corridor" });
   addBox(world, "hall −X", new Vec5(-2.2, 2, -6, 0, 0), new Vec5(0.2, 2, 8, 0.5, 0.5), WALL, { kind: "corridor" });
@@ -463,7 +463,7 @@ function loadTopology(world: World, player: PlayerState): void {
 
 function loadPhysics(world: World, player: PlayerState): void {
   world.objective = "Balls integrate velocity in R⁵. Add gravity on W or V and watch slices breathe as they fall through hidden axes.";
-  world.mathNote = "Euler step: v ← v + g Δt, x ← x + v Δt, with 5D sphere–AABB collisions. Gravity is a Vec5.";
+  world.mathNote = "Euler step: v ← v + g Δt, x ← x + v Δt, with 5D sphere-AABB collisions. Gravity is a Vec5.";
   addBox(world, "lab floor", new Vec5(0, -0.2, 0, 0, 0), new Vec5(16, 0.2, 16, 8, 8), 0x161e28, { kind: "plane" });
   addBox(world, "rail +X", new Vec5(16, 2, 0, 0, 0), new Vec5(0.2, 2, 16, 8, 8), 0x243044, { kind: "wall" });
   addBox(world, "rail −X", new Vec5(-16, 2, 0, 0, 0), new Vec5(0.2, 2, 16, 8, 8), 0x243044, { kind: "wall" });
@@ -534,7 +534,7 @@ function loadImpossible(world: World, player: PlayerState): void {
     kind: "room",
     opacity: 0.45,
     collidable: false,
-    note: "Interior that only exists at W≈1.8 — a closed 3D box with a different inside along W.",
+    note: "Interior that only exists at W≈1.8 - a closed 3D box with a different inside along W.",
   });
   addBall(world, "Interior pearl", new Vec5(-2, 1.6, 8, 1.8, 0), 0.35, 0xffd27a, { kinematic: true });
   addBox(world, "carry cube", new Vec5(0, 1.1, 4, 0, 0), new Vec5(0.4, 0.4, 0.4, 0.4, 0.4), 0x7ef0ff, {
